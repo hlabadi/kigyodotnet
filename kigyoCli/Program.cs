@@ -13,5 +13,3 @@ while (true)
     var key = Console.ReadKey(true);
     kigyo.Move(key.Key);
 }
-
-Console.ReadLine();
