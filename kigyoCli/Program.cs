@@ -6,8 +6,6 @@ var kigyo = new Kigyo();
 
 kigyo.Start();
 
-
-
 while (true)
 {
     var key = Console.ReadKey(true);

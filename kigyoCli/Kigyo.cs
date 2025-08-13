@@ -117,7 +117,11 @@ public class Kigyo
                 break;
         }
 
-        // validate against walls
+        if (newHead.x < 0 || newHead.x == X - 1 || newHead.y < 0 || newHead.y == Y - 1)
+        {
+            EndGame(false);
+            return;
+        }
 
         if (_gameArea[newHead.y, newHead.x] > 0)
         {
